@@ -1,0 +1,138 @@
+/* 
+* @Author: ananayarora
+* @Date:   2016-01-10 03:38:25
+* @Last Modified by:   ananayarora
+* @Last Modified time: 2016-01-14 22:28:13
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.home-page{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/office.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.home-page .text{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	z-index: +2;
+	color:#fff;
+	font-weight: 100;
+	text-shadow:0px 20px 20px #000;
+}
+.home-page .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: +1;
+	background: rgba(0,0,0,0.8);
+}
+.home-page .text{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+}
+.mdl-layout__drawer-button i{
+	margin:9px;
+}
+.login-form{
+	position: absolute;
+	top:50%;
+	text-align: center;
+	width: 35%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+}
+.discover{
+	background-image: url(../img/abstract.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	margin-top:-25px;
+}
+.discover-text{
+	text-align: center;
+	color:#fff;
+	font-weight: 100;
+	position: relative;
+	top:60px;
+}
+.discover-description-text{
+	text-align: center;
+}
+.startup-image{
+	padding:10px;
+	position: relative;
+	color:#fff;
+	background-size: cover;
+}
+.startup-name{
+	position: relative;
+	z-index: +3;
+	color:#fff;
+}
+.startup-overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+.startup-card{
+	width: 30%;
+    height: 400px;
+    float: left;
+    margin:20px;
+}
+.startup_photo{
+	border-radius:100%;
+	width: 300px;
+	height: 300px;
+	background-position: center center;
+	display: inline-block;
+}
+.startup_details{
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px;
+}
+.main_startup{
+	margin-top:100px;
+}
+.current_funding{
+	font-size:30pt;
+	display: inline-block;
+	font-weight: 200 !important;
+}
+.valuation{
+	display: inline-block;
+	font-size: 30pt;
+	margin-left:30px;
+	font-weight: 200 !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.home-page .text{
+		font-size: 30pt;
+		width: 80%;
+		text-align: center;
+	}
+	.login-form{
+		width: 85%;
+	}
+}
