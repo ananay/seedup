@@ -3,7 +3,7 @@
  * @Author: ananayarora
  * @Date:   2016-01-14 22:34:55
  * @Last Modified by:   ananayarora
- * @Last Modified time: 2016-01-14 22:45:04
+ * @Last Modified time: 2016-01-15 00:51:24
  */
 require('header.php');
 if (isset($_POST['submit'])){
@@ -43,11 +43,18 @@ if (isset($_POST['submit'])){
 				<input class="mdl-textfield__input" id="email" name="email" required/>
 				<label class="mdl-textfield__label" for="email">Email</label>
 			</div><br />
+			<br>
+			<p>Note: We will be using this email address for sending and recieving payments. Please make sure this is registered to PayPal.</p>
 			Investor: 
 			<select name="investor">
 				<option>true</option>
 				<option>false</option>
 			</select>
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" id="investorbudget" name="investorbudget"/>
+				<label class="mdl-textfield__label" for="investorbudget">Investor Budget</label>
+			</div><br />
+			<p>Note: Leave investor budget blank, if you're not an investor.</p>
 			<br />
 			<br />
 			<input value="Sign Up" type="submit" name="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
